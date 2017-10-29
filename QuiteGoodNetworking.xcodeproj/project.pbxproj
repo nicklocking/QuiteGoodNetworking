@@ -1,0 +1,871 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		83B0A0B6E91E5352130395A8 /* Pods_QuiteGoodNetworkingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 460E944F23388D755389DA4B /* Pods_QuiteGoodNetworkingTests.framework */; };
+		AD9BBF32983D8F438A936E02 /* Pods_QuiteGoodNetworking_QuiteGoodNetworkingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1C4AE613E9E5EC778CBAAF2 /* Pods_QuiteGoodNetworking_QuiteGoodNetworkingTests.framework */; };
+		CB9D503E1B745FEA5B29E7B6 /* Pods_QuiteGoodNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D54BD44CCA04761EAA921BF /* Pods_QuiteGoodNetworking.framework */; };
+		CCE374331FA571FA00A3A9AB /* QuiteGoodNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCE374291FA571FA00A3A9AB /* QuiteGoodNetworking.framework */; };
+		CCE374381FA571FA00A3A9AB /* QuiteGoodNetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE374371FA571FA00A3A9AB /* QuiteGoodNetworkingTests.swift */; };
+		CCE374C11FA5763D00A3A9AB /* NetworkParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE374481FA5763C00A3A9AB /* NetworkParameter.swift */; };
+		CCE374C21FA5763D00A3A9AB /* NetworkParameterDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE374491FA5763C00A3A9AB /* NetworkParameterDictionary.swift */; };
+		CCE374C31FA5763D00A3A9AB /* ResponseProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE3744A1FA5763C00A3A9AB /* ResponseProcessor.swift */; };
+		CCE374C41FA5763D00A3A9AB /* HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE3744C1FA5763C00A3A9AB /* HTTPStatusCode.swift */; };
+		CCE374C51FA5763D00A3A9AB /* HTTPStatusRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE3744D1FA5763C00A3A9AB /* HTTPStatusRange.swift */; };
+		CCE374C61FA5763D00A3A9AB /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE3744E1FA5763C00A3A9AB /* Networking.swift */; };
+		CCE374C71FA5763D00A3A9AB /* ConcurrentOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE374501FA5763C00A3A9AB /* ConcurrentOperation.swift */; };
+		CCE374C81FA5763D00A3A9AB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CCE374511FA5763C00A3A9AB /* Info.plist */; };
+		CCE374C91FA5763D00A3A9AB /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE374521FA5763C00A3A9AB /* HTTPRequest.swift */; };
+		CCE374CA1FA5763D00A3A9AB /* Authenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE374531FA5763C00A3A9AB /* Authenticator.swift */; };
+		CCE375311FA5763D00A3A9AB /* Readme.MD in Resources */ = {isa = PBXBuildFile; fileRef = CCE374BE1FA5763C00A3A9AB /* Readme.MD */; };
+		CCE375321FA5763D00A3A9AB /* QuiteGoodNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = CCE374BF1FA5763C00A3A9AB /* QuiteGoodNetworking.h */; };
+		CCE375331FA5763D00A3A9AB /* ResponseResultStatusNotificationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE374C01FA5763D00A3A9AB /* ResponseResultStatusNotificationObserver.swift */; };
+		CCE375351FA5766A00A3A9AB /* QuiteGoodNetworking_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE375341FA5766900A3A9AB /* QuiteGoodNetworking_Tests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CCE374341FA571FA00A3A9AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCE374201FA571FA00A3A9AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCE374281FA571FA00A3A9AB;
+			remoteInfo = QuiteGoodNetworking;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		079E0EAA107ABB991436235D /* Pods-QuiteGoodNetworking-QuiteGoodNetworkingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuiteGoodNetworking-QuiteGoodNetworkingTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuiteGoodNetworking-QuiteGoodNetworkingTests/Pods-QuiteGoodNetworking-QuiteGoodNetworkingTests.release.xcconfig"; sourceTree = "<group>"; };
+		0D54BD44CCA04761EAA921BF /* Pods_QuiteGoodNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuiteGoodNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41181C25E971D82144A1AE75 /* Pods-QuiteGoodNetworking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuiteGoodNetworking.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuiteGoodNetworking/Pods-QuiteGoodNetworking.debug.xcconfig"; sourceTree = "<group>"; };
+		460E944F23388D755389DA4B /* Pods_QuiteGoodNetworkingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuiteGoodNetworkingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E4D18F6C56475A42E0DD309 /* Pods-QuiteGoodNetworkingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuiteGoodNetworkingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuiteGoodNetworkingTests/Pods-QuiteGoodNetworkingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9D3554D4337D82AB6658865F /* Pods-QuiteGoodNetworking-QuiteGoodNetworkingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuiteGoodNetworking-QuiteGoodNetworkingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuiteGoodNetworking-QuiteGoodNetworkingTests/Pods-QuiteGoodNetworking-QuiteGoodNetworkingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BBF48D273193DC8FE872C3C2 /* Pods-QuiteGoodNetworkingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuiteGoodNetworkingTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuiteGoodNetworkingTests/Pods-QuiteGoodNetworkingTests.release.xcconfig"; sourceTree = "<group>"; };
+		CCE374291FA571FA00A3A9AB /* QuiteGoodNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QuiteGoodNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCE374321FA571FA00A3A9AB /* QuiteGoodNetworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuiteGoodNetworkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCE374371FA571FA00A3A9AB /* QuiteGoodNetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuiteGoodNetworkingTests.swift; sourceTree = "<group>"; };
+		CCE374391FA571FA00A3A9AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCE374431FA5724000A3A9AB /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		CCE374481FA5763C00A3A9AB /* NetworkParameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkParameter.swift; sourceTree = "<group>"; };
+		CCE374491FA5763C00A3A9AB /* NetworkParameterDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkParameterDictionary.swift; sourceTree = "<group>"; };
+		CCE3744A1FA5763C00A3A9AB /* ResponseProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseProcessor.swift; sourceTree = "<group>"; };
+		CCE3744C1FA5763C00A3A9AB /* HTTPStatusCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPStatusCode.swift; sourceTree = "<group>"; };
+		CCE3744D1FA5763C00A3A9AB /* HTTPStatusRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPStatusRange.swift; sourceTree = "<group>"; };
+		CCE3744E1FA5763C00A3A9AB /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		CCE374501FA5763C00A3A9AB /* ConcurrentOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcurrentOperation.swift; sourceTree = "<group>"; };
+		CCE374511FA5763C00A3A9AB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../../MovieChecklist/QuiteGoodNetworking/Info.plist; sourceTree = "<group>"; };
+		CCE374521FA5763C00A3A9AB /* HTTPRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
+		CCE374531FA5763C00A3A9AB /* Authenticator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authenticator.swift; sourceTree = "<group>"; };
+		CCE374561FA5763C00A3A9AB /* AddWhisperToFeedEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddWhisperToFeedEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE374571FA5763C00A3A9AB /* ChangeNicknameEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeNicknameEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE374581FA5763C00A3A9AB /* ChangePINEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePINEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE374591FA5763C00A3A9AB /* ChangeUserSettingEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeUserSettingEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE3745A1FA5763C00A3A9AB /* CheckPINEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckPINEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE3745B1FA5763C00A3A9AB /* ConcurrentOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcurrentOperation.swift; sourceTree = "<group>"; };
+		CCE3745C1FA5763C00A3A9AB /* CreateConversationEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateConversationEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE3745D1FA5763C00A3A9AB /* CreateFeedEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateFeedEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE3745E1FA5763C00A3A9AB /* DeleteConversationsEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteConversationsEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE3745F1FA5763C00A3A9AB /* DismissCardEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissCardEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE374601FA5763C00A3A9AB /* EditFeedEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditFeedEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE374611FA5763C00A3A9AB /* EndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointRequest.swift; sourceTree = "<group>"; };
+		CCE374621FA5763C00A3A9AB /* FeedInviteAnonymousEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedInviteAnonymousEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE374631FA5763C00A3A9AB /* FetchConversationEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchConversationEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE374641FA5763C00A3A9AB /* FetchConversationListEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchConversationListEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE374651FA5763C00A3A9AB /* FetchDiscoverCategoriesEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchDiscoverCategoriesEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE374661FA5763C00A3A9AB /* FetchDiscoverFeaturedFeedsEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchDiscoverFeaturedFeedsEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE374671FA5763C00A3A9AB /* FetchGiphyEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchGiphyEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE374681FA5763C00A3A9AB /* FetchImageCampaign.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchImageCampaign.swift; sourceTree = "<group>"; };
+		CCE374691FA5763C00A3A9AB /* FetchInterestCategoriesEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchInterestCategoriesEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE3746A1FA5763C00A3A9AB /* FetchMessagingCredentialsEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchMessagingCredentialsEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE3746B1FA5763C00A3A9AB /* FetchNewUserChallengeEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchNewUserChallengeEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE3746C1FA5763C00A3A9AB /* FetchOwnChatRatingEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchOwnChatRatingEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE3746D1FA5763C00A3A9AB /* FetchPINResetTextEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchPINResetTextEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE3746E1FA5763C00A3A9AB /* FetchPINResetWhispersEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchPINResetWhispersEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE3746F1FA5763C00A3A9AB /* FetchSettingsForUserEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchSettingsForUserEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE374701FA5763C00A3A9AB /* FetchShareLinkEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchShareLinkEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE374711FA5763C00A3A9AB /* FetchShortUrlForWidEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchShortUrlForWidEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE374721FA5763C00A3A9AB /* FetchSuggestedLocationsEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchSuggestedLocationsEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE374731FA5763C00A3A9AB /* FetchTribeMembersListEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchTribeMembersListEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE374741FA5763C00A3A9AB /* FetchUserSettingsEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchUserSettingsEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE374751FA5763C00A3A9AB /* FetchWhisperEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchWhisperEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE374761FA5763C00A3A9AB /* FetchWhisperMediaEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchWhisperMediaEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE374771FA5763C00A3A9AB /* FetchWhispersForFeedEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchWhispersForFeedEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE374781FA5763C00A3A9AB /* FlagTribeEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlagTribeEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE374791FA5763C00A3A9AB /* FlagWhisperEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlagWhisperEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE3747A1FA5763C00A3A9AB /* FontDownloadEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontDownloadEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE3747B1FA5763C00A3A9AB /* GetConversationProfileDataEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetConversationProfileDataEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE3747C1FA5763C00A3A9AB /* HeartWhisperEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartWhisperEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE3747D1FA5763C00A3A9AB /* MessagingEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagingEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE3747E1FA5763C00A3A9AB /* MigrateToCurrentAppVersionEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MigrateToCurrentAppVersionEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE3747F1FA5763C00A3A9AB /* PostNewUserEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostNewUserEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE374801FA5763C00A3A9AB /* RegisterForMessagingPushNotificationsEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterForMessagingPushNotificationsEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE374811FA5763C00A3A9AB /* RegisterForWhisperPushNotificationsEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterForWhisperPushNotificationsEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE374821FA5763C00A3A9AB /* RegisterPublicKeyEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPublicKeyEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE374831FA5763C00A3A9AB /* RemoveWhisperFromFeedEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoveWhisperFromFeedEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE374841FA5763C00A3A9AB /* ReplayConversationEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplayConversationEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE374851FA5763C00A3A9AB /* RequestNotificationForFeedEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestNotificationForFeedEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE374861FA5763C00A3A9AB /* SearchEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE374871FA5763C00A3A9AB /* SearchFeedEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchFeedEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE374881FA5763C00A3A9AB /* SearchForLocationsEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchForLocationsEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE374891FA5763C00A3A9AB /* SearchScrollEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchScrollEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE3748A1FA5763C00A3A9AB /* SendConversationAcceptedEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendConversationAcceptedEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE3748B1FA5763C00A3A9AB /* SendInterestedCategoriesEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendInterestedCategoriesEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE3748C1FA5763C00A3A9AB /* SendMessageEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendMessageEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE3748D1FA5763C00A3A9AB /* SendMessagingEventAcksEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendMessagingEventAcksEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE3748E1FA5763C00A3A9AB /* SendWhispersViewedEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendWhispersViewedEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE3748F1FA5763C00A3A9AB /* SubmitConversationRatingEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitConversationRatingEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE374901FA5763C00A3A9AB /* SubmitUserFeedbackEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitUserFeedbackEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE374911FA5763C00A3A9AB /* SubscribeToFeedEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscribeToFeedEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE374921FA5763C00A3A9AB /* SuggestedFeedForReplyEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuggestedFeedForReplyEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE374931FA5763C00A3A9AB /* TestServerListEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestServerListEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE374941FA5763C00A3A9AB /* TribeInvitationEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TribeInvitationEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE374951FA5763C00A3A9AB /* UnheartWhisperEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnheartWhisperEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE374961FA5763C00A3A9AB /* UnlockDebugSettingsEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnlockDebugSettingsEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE374971FA5763C00A3A9AB /* UnsubscribeFromFeedEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnsubscribeFromFeedEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE374981FA5763C00A3A9AB /* UpdateStatusesForReadMessagesEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateStatusesForReadMessagesEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE374991FA5763C00A3A9AB /* UpdateUserEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateUserEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE3749A1FA5763C00A3A9AB /* UpdateUserLocationEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateUserLocationEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE3749B1FA5763C00A3A9AB /* VotePollEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VotePollEndpointRequest.swift; sourceTree = "<group>"; };
+		CCE3749D1FA5763C00A3A9AB /* CreateConversationResponseProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateConversationResponseProcessor.swift; sourceTree = "<group>"; };
+		CCE3749E1FA5763C00A3A9AB /* DeleteConversationsResponseProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteConversationsResponseProcessor.swift; sourceTree = "<group>"; };
+		CCE3749F1FA5763C00A3A9AB /* EditFeedResponseProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditFeedResponseProcessor.swift; sourceTree = "<group>"; };
+		CCE374A01FA5763C00A3A9AB /* FetchFeaturedResponseProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchFeaturedResponseProcessor.swift; sourceTree = "<group>"; };
+		CCE374A11FA5763C00A3A9AB /* FetchFontResponseProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchFontResponseProcessor.swift; sourceTree = "<group>"; };
+		CCE374A21FA5763C00A3A9AB /* FetchGiphyResponseProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchGiphyResponseProcessor.swift; sourceTree = "<group>"; };
+		CCE374A31FA5763C00A3A9AB /* FetchImageCampaignResponseProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchImageCampaignResponseProcessor.swift; sourceTree = "<group>"; };
+		CCE374A41FA5763C00A3A9AB /* FetchInterestCategoriesResponseProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchInterestCategoriesResponseProcessor.swift; sourceTree = "<group>"; };
+		CCE374A51FA5763C00A3A9AB /* FetchMessagingCredentialsResponseProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchMessagingCredentialsResponseProcessor.swift; sourceTree = "<group>"; };
+		CCE374A61FA5763C00A3A9AB /* FetchNewUserChallengeResponseProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchNewUserChallengeResponseProcessor.swift; sourceTree = "<group>"; };
+		CCE374A71FA5763C00A3A9AB /* FetchOwnChatRatingResponseProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchOwnChatRatingResponseProcessor.swift; sourceTree = "<group>"; };
+		CCE374A81FA5763C00A3A9AB /* FetchSettingsForUserResponseProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchSettingsForUserResponseProcessor.swift; sourceTree = "<group>"; };
+		CCE374A91FA5763C00A3A9AB /* FetchShortUrlForWidResponseProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchShortUrlForWidResponseProcessor.swift; sourceTree = "<group>"; };
+		CCE374AA1FA5763C00A3A9AB /* FetchSuggestedLocationsResponseProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchSuggestedLocationsResponseProcessor.swift; sourceTree = "<group>"; };
+		CCE374AB1FA5763C00A3A9AB /* FetchWhisperMediaResponseProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchWhisperMediaResponseProcessor.swift; sourceTree = "<group>"; };
+		CCE374AC1FA5763C00A3A9AB /* FlagWhisperResponseProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlagWhisperResponseProcessor.swift; sourceTree = "<group>"; };
+		CCE374AD1FA5763C00A3A9AB /* GetConversationProfileDataResponseProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetConversationProfileDataResponseProcessor.swift; sourceTree = "<group>"; };
+		CCE374AE1FA5763C00A3A9AB /* PostNewUserResponseProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostNewUserResponseProcessor.swift; sourceTree = "<group>"; };
+		CCE374AF1FA5763C00A3A9AB /* ReceiveMessagesResponseProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiveMessagesResponseProcessor.swift; sourceTree = "<group>"; };
+		CCE374B01FA5763C00A3A9AB /* RemoveWhisperFromFeedResponseProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoveWhisperFromFeedResponseProcessor.swift; sourceTree = "<group>"; };
+		CCE374B11FA5763C00A3A9AB /* ReplayConversationResponseProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplayConversationResponseProcessor.swift; sourceTree = "<group>"; };
+		CCE374B31FA5763C00A3A9AB /* SearchFeedsResponseSubprocessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchFeedsResponseSubprocessor.swift; sourceTree = "<group>"; };
+		CCE374B41FA5763C00A3A9AB /* SearchWhispersResponseSubprocessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchWhispersResponseSubprocessor.swift; sourceTree = "<group>"; };
+		CCE374B51FA5763C00A3A9AB /* SearchResponseProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResponseProcessor.swift; sourceTree = "<group>"; };
+		CCE374B61FA5763C00A3A9AB /* SendMessageResponseProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendMessageResponseProcessor.swift; sourceTree = "<group>"; };
+		CCE374B71FA5763C00A3A9AB /* SubscribeToFeedResponseProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscribeToFeedResponseProcessor.swift; sourceTree = "<group>"; };
+		CCE374B81FA5763C00A3A9AB /* SuggestedFeedForReplyResponseProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuggestedFeedForReplyResponseProcessor.swift; sourceTree = "<group>"; };
+		CCE374B91FA5763C00A3A9AB /* TestServerListResponseProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestServerListResponseProcessor.swift; sourceTree = "<group>"; };
+		CCE374BA1FA5763C00A3A9AB /* UnsubscribeFromFeedResponseProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnsubscribeFromFeedResponseProcessor.swift; sourceTree = "<group>"; };
+		CCE374BB1FA5763C00A3A9AB /* UpdateUserResponseProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateUserResponseProcessor.swift; sourceTree = "<group>"; };
+		CCE374BC1FA5763C00A3A9AB /* SearchQueryType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchQueryType.swift; sourceTree = "<group>"; };
+		CCE374BD1FA5763C00A3A9AB /* System.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
+		CCE374BE1FA5763C00A3A9AB /* Readme.MD */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.MD; sourceTree = "<group>"; };
+		CCE374BF1FA5763C00A3A9AB /* QuiteGoodNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuiteGoodNetworking.h; path = ../../MovieChecklist/QuiteGoodNetworking/QuiteGoodNetworking.h; sourceTree = "<group>"; };
+		CCE374C01FA5763D00A3A9AB /* ResponseResultStatusNotificationObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseResultStatusNotificationObserver.swift; sourceTree = "<group>"; };
+		CCE375341FA5766900A3A9AB /* QuiteGoodNetworking_Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuiteGoodNetworking_Tests.swift; sourceTree = "<group>"; };
+		E1C4AE613E9E5EC778CBAAF2 /* Pods_QuiteGoodNetworking_QuiteGoodNetworkingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuiteGoodNetworking_QuiteGoodNetworkingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E874EBEC157139CBF138DBA0 /* Pods-QuiteGoodNetworking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuiteGoodNetworking.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuiteGoodNetworking/Pods-QuiteGoodNetworking.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CCE374251FA571FA00A3A9AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB9D503E1B745FEA5B29E7B6 /* Pods_QuiteGoodNetworking.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCE3742F1FA571FA00A3A9AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCE374331FA571FA00A3A9AB /* QuiteGoodNetworking.framework in Frameworks */,
+				83B0A0B6E91E5352130395A8 /* Pods_QuiteGoodNetworkingTests.framework in Frameworks */,
+				AD9BBF32983D8F438A936E02 /* Pods_QuiteGoodNetworking_QuiteGoodNetworkingTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3702513B5D23D9F59E0D9439 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8E4D18F6C56475A42E0DD309 /* Pods-QuiteGoodNetworkingTests.debug.xcconfig */,
+				BBF48D273193DC8FE872C3C2 /* Pods-QuiteGoodNetworkingTests.release.xcconfig */,
+				41181C25E971D82144A1AE75 /* Pods-QuiteGoodNetworking.debug.xcconfig */,
+				E874EBEC157139CBF138DBA0 /* Pods-QuiteGoodNetworking.release.xcconfig */,
+				9D3554D4337D82AB6658865F /* Pods-QuiteGoodNetworking-QuiteGoodNetworkingTests.debug.xcconfig */,
+				079E0EAA107ABB991436235D /* Pods-QuiteGoodNetworking-QuiteGoodNetworkingTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		81F10860831DEF19A6BCCE60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				460E944F23388D755389DA4B /* Pods_QuiteGoodNetworkingTests.framework */,
+				0D54BD44CCA04761EAA921BF /* Pods_QuiteGoodNetworking.framework */,
+				E1C4AE613E9E5EC778CBAAF2 /* Pods_QuiteGoodNetworking_QuiteGoodNetworkingTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCE3741F1FA571FA00A3A9AB = {
+			isa = PBXGroup;
+			children = (
+				CCE374431FA5724000A3A9AB /* Podfile */,
+				CCE374541FA5763C00A3A9AB /* WhisperNetworking */,
+				CCE3742B1FA571FA00A3A9AB /* QuiteGoodNetworking */,
+				CCE374361FA571FA00A3A9AB /* QuiteGoodNetworkingTests */,
+				CCE3742A1FA571FA00A3A9AB /* Products */,
+				3702513B5D23D9F59E0D9439 /* Pods */,
+				81F10860831DEF19A6BCCE60 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CCE3742A1FA571FA00A3A9AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCE374291FA571FA00A3A9AB /* QuiteGoodNetworking.framework */,
+				CCE374321FA571FA00A3A9AB /* QuiteGoodNetworkingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCE3742B1FA571FA00A3A9AB /* QuiteGoodNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				CCE374531FA5763C00A3A9AB /* Authenticator.swift */,
+				CCE374501FA5763C00A3A9AB /* ConcurrentOperation.swift */,
+				CCE374521FA5763C00A3A9AB /* HTTPRequest.swift */,
+				CCE3744C1FA5763C00A3A9AB /* HTTPStatusCode.swift */,
+				CCE3744D1FA5763C00A3A9AB /* HTTPStatusRange.swift */,
+				CCE374511FA5763C00A3A9AB /* Info.plist */,
+				CCE3744E1FA5763C00A3A9AB /* Networking.swift */,
+				CCE374481FA5763C00A3A9AB /* NetworkParameter.swift */,
+				CCE374491FA5763C00A3A9AB /* NetworkParameterDictionary.swift */,
+				CCE374BF1FA5763C00A3A9AB /* QuiteGoodNetworking.h */,
+				CCE374BE1FA5763C00A3A9AB /* Readme.MD */,
+				CCE3744A1FA5763C00A3A9AB /* ResponseProcessor.swift */,
+				CCE374C01FA5763D00A3A9AB /* ResponseResultStatusNotificationObserver.swift */,
+			);
+			path = QuiteGoodNetworking;
+			sourceTree = "<group>";
+		};
+		CCE374361FA571FA00A3A9AB /* QuiteGoodNetworkingTests */ = {
+			isa = PBXGroup;
+			children = (
+				CCE375341FA5766900A3A9AB /* QuiteGoodNetworking_Tests.swift */,
+				CCE374371FA571FA00A3A9AB /* QuiteGoodNetworkingTests.swift */,
+				CCE374391FA571FA00A3A9AB /* Info.plist */,
+			);
+			path = QuiteGoodNetworkingTests;
+			sourceTree = "<group>";
+		};
+		CCE374541FA5763C00A3A9AB /* WhisperNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				CCE374551FA5763C00A3A9AB /* EndpointRequests */,
+				CCE3749C1FA5763C00A3A9AB /* ResponseProcessors */,
+				CCE374BC1FA5763C00A3A9AB /* SearchQueryType.swift */,
+				CCE374BD1FA5763C00A3A9AB /* System.swift */,
+			);
+			path = WhisperNetworking;
+			sourceTree = "<group>";
+		};
+		CCE374551FA5763C00A3A9AB /* EndpointRequests */ = {
+			isa = PBXGroup;
+			children = (
+				CCE374561FA5763C00A3A9AB /* AddWhisperToFeedEndpointRequest.swift */,
+				CCE374571FA5763C00A3A9AB /* ChangeNicknameEndpointRequest.swift */,
+				CCE374581FA5763C00A3A9AB /* ChangePINEndpointRequest.swift */,
+				CCE374591FA5763C00A3A9AB /* ChangeUserSettingEndpointRequest.swift */,
+				CCE3745A1FA5763C00A3A9AB /* CheckPINEndpointRequest.swift */,
+				CCE3745B1FA5763C00A3A9AB /* ConcurrentOperation.swift */,
+				CCE3745C1FA5763C00A3A9AB /* CreateConversationEndpointRequest.swift */,
+				CCE3745D1FA5763C00A3A9AB /* CreateFeedEndpointRequest.swift */,
+				CCE3745E1FA5763C00A3A9AB /* DeleteConversationsEndpointRequest.swift */,
+				CCE3745F1FA5763C00A3A9AB /* DismissCardEndpointRequest.swift */,
+				CCE374601FA5763C00A3A9AB /* EditFeedEndpointRequest.swift */,
+				CCE374611FA5763C00A3A9AB /* EndpointRequest.swift */,
+				CCE374621FA5763C00A3A9AB /* FeedInviteAnonymousEndpointRequest.swift */,
+				CCE374631FA5763C00A3A9AB /* FetchConversationEndpointRequest.swift */,
+				CCE374641FA5763C00A3A9AB /* FetchConversationListEndpointRequest.swift */,
+				CCE374651FA5763C00A3A9AB /* FetchDiscoverCategoriesEndpointRequest.swift */,
+				CCE374661FA5763C00A3A9AB /* FetchDiscoverFeaturedFeedsEndpointRequest.swift */,
+				CCE374671FA5763C00A3A9AB /* FetchGiphyEndpointRequest.swift */,
+				CCE374681FA5763C00A3A9AB /* FetchImageCampaign.swift */,
+				CCE374691FA5763C00A3A9AB /* FetchInterestCategoriesEndpointRequest.swift */,
+				CCE3746A1FA5763C00A3A9AB /* FetchMessagingCredentialsEndpointRequest.swift */,
+				CCE3746B1FA5763C00A3A9AB /* FetchNewUserChallengeEndpointRequest.swift */,
+				CCE3746C1FA5763C00A3A9AB /* FetchOwnChatRatingEndpointRequest.swift */,
+				CCE3746D1FA5763C00A3A9AB /* FetchPINResetTextEndpointRequest.swift */,
+				CCE3746E1FA5763C00A3A9AB /* FetchPINResetWhispersEndpointRequest.swift */,
+				CCE3746F1FA5763C00A3A9AB /* FetchSettingsForUserEndpointRequest.swift */,
+				CCE374701FA5763C00A3A9AB /* FetchShareLinkEndpointRequest.swift */,
+				CCE374711FA5763C00A3A9AB /* FetchShortUrlForWidEndpointRequest.swift */,
+				CCE374721FA5763C00A3A9AB /* FetchSuggestedLocationsEndpointRequest.swift */,
+				CCE374731FA5763C00A3A9AB /* FetchTribeMembersListEndpointRequest.swift */,
+				CCE374741FA5763C00A3A9AB /* FetchUserSettingsEndpointRequest.swift */,
+				CCE374751FA5763C00A3A9AB /* FetchWhisperEndpointRequest.swift */,
+				CCE374761FA5763C00A3A9AB /* FetchWhisperMediaEndpointRequest.swift */,
+				CCE374771FA5763C00A3A9AB /* FetchWhispersForFeedEndpointRequest.swift */,
+				CCE374781FA5763C00A3A9AB /* FlagTribeEndpointRequest.swift */,
+				CCE374791FA5763C00A3A9AB /* FlagWhisperEndpointRequest.swift */,
+				CCE3747A1FA5763C00A3A9AB /* FontDownloadEndpointRequest.swift */,
+				CCE3747B1FA5763C00A3A9AB /* GetConversationProfileDataEndpointRequest.swift */,
+				CCE3747C1FA5763C00A3A9AB /* HeartWhisperEndpointRequest.swift */,
+				CCE3747D1FA5763C00A3A9AB /* MessagingEndpointRequest.swift */,
+				CCE3747E1FA5763C00A3A9AB /* MigrateToCurrentAppVersionEndpointRequest.swift */,
+				CCE3747F1FA5763C00A3A9AB /* PostNewUserEndpointRequest.swift */,
+				CCE374801FA5763C00A3A9AB /* RegisterForMessagingPushNotificationsEndpointRequest.swift */,
+				CCE374811FA5763C00A3A9AB /* RegisterForWhisperPushNotificationsEndpointRequest.swift */,
+				CCE374821FA5763C00A3A9AB /* RegisterPublicKeyEndpointRequest.swift */,
+				CCE374831FA5763C00A3A9AB /* RemoveWhisperFromFeedEndpointRequest.swift */,
+				CCE374841FA5763C00A3A9AB /* ReplayConversationEndpointRequest.swift */,
+				CCE374851FA5763C00A3A9AB /* RequestNotificationForFeedEndpointRequest.swift */,
+				CCE374861FA5763C00A3A9AB /* SearchEndpointRequest.swift */,
+				CCE374871FA5763C00A3A9AB /* SearchFeedEndpointRequest.swift */,
+				CCE374881FA5763C00A3A9AB /* SearchForLocationsEndpointRequest.swift */,
+				CCE374891FA5763C00A3A9AB /* SearchScrollEndpointRequest.swift */,
+				CCE3748A1FA5763C00A3A9AB /* SendConversationAcceptedEndpointRequest.swift */,
+				CCE3748B1FA5763C00A3A9AB /* SendInterestedCategoriesEndpointRequest.swift */,
+				CCE3748C1FA5763C00A3A9AB /* SendMessageEndpointRequest.swift */,
+				CCE3748D1FA5763C00A3A9AB /* SendMessagingEventAcksEndpointRequest.swift */,
+				CCE3748E1FA5763C00A3A9AB /* SendWhispersViewedEndpointRequest.swift */,
+				CCE3748F1FA5763C00A3A9AB /* SubmitConversationRatingEndpointRequest.swift */,
+				CCE374901FA5763C00A3A9AB /* SubmitUserFeedbackEndpointRequest.swift */,
+				CCE374911FA5763C00A3A9AB /* SubscribeToFeedEndpointRequest.swift */,
+				CCE374921FA5763C00A3A9AB /* SuggestedFeedForReplyEndpointRequest.swift */,
+				CCE374931FA5763C00A3A9AB /* TestServerListEndpointRequest.swift */,
+				CCE374941FA5763C00A3A9AB /* TribeInvitationEndpointRequest.swift */,
+				CCE374951FA5763C00A3A9AB /* UnheartWhisperEndpointRequest.swift */,
+				CCE374961FA5763C00A3A9AB /* UnlockDebugSettingsEndpointRequest.swift */,
+				CCE374971FA5763C00A3A9AB /* UnsubscribeFromFeedEndpointRequest.swift */,
+				CCE374981FA5763C00A3A9AB /* UpdateStatusesForReadMessagesEndpointRequest.swift */,
+				CCE374991FA5763C00A3A9AB /* UpdateUserEndpointRequest.swift */,
+				CCE3749A1FA5763C00A3A9AB /* UpdateUserLocationEndpointRequest.swift */,
+				CCE3749B1FA5763C00A3A9AB /* VotePollEndpointRequest.swift */,
+			);
+			path = EndpointRequests;
+			sourceTree = "<group>";
+		};
+		CCE3749C1FA5763C00A3A9AB /* ResponseProcessors */ = {
+			isa = PBXGroup;
+			children = (
+				CCE3749D1FA5763C00A3A9AB /* CreateConversationResponseProcessor.swift */,
+				CCE3749E1FA5763C00A3A9AB /* DeleteConversationsResponseProcessor.swift */,
+				CCE3749F1FA5763C00A3A9AB /* EditFeedResponseProcessor.swift */,
+				CCE374A01FA5763C00A3A9AB /* FetchFeaturedResponseProcessor.swift */,
+				CCE374A11FA5763C00A3A9AB /* FetchFontResponseProcessor.swift */,
+				CCE374A21FA5763C00A3A9AB /* FetchGiphyResponseProcessor.swift */,
+				CCE374A31FA5763C00A3A9AB /* FetchImageCampaignResponseProcessor.swift */,
+				CCE374A41FA5763C00A3A9AB /* FetchInterestCategoriesResponseProcessor.swift */,
+				CCE374A51FA5763C00A3A9AB /* FetchMessagingCredentialsResponseProcessor.swift */,
+				CCE374A61FA5763C00A3A9AB /* FetchNewUserChallengeResponseProcessor.swift */,
+				CCE374A71FA5763C00A3A9AB /* FetchOwnChatRatingResponseProcessor.swift */,
+				CCE374A81FA5763C00A3A9AB /* FetchSettingsForUserResponseProcessor.swift */,
+				CCE374A91FA5763C00A3A9AB /* FetchShortUrlForWidResponseProcessor.swift */,
+				CCE374AA1FA5763C00A3A9AB /* FetchSuggestedLocationsResponseProcessor.swift */,
+				CCE374AB1FA5763C00A3A9AB /* FetchWhisperMediaResponseProcessor.swift */,
+				CCE374AC1FA5763C00A3A9AB /* FlagWhisperResponseProcessor.swift */,
+				CCE374AD1FA5763C00A3A9AB /* GetConversationProfileDataResponseProcessor.swift */,
+				CCE374AE1FA5763C00A3A9AB /* PostNewUserResponseProcessor.swift */,
+				CCE374AF1FA5763C00A3A9AB /* ReceiveMessagesResponseProcessor.swift */,
+				CCE374B01FA5763C00A3A9AB /* RemoveWhisperFromFeedResponseProcessor.swift */,
+				CCE374B11FA5763C00A3A9AB /* ReplayConversationResponseProcessor.swift */,
+				CCE374B21FA5763C00A3A9AB /* ResponseSubprocessors */,
+				CCE374B51FA5763C00A3A9AB /* SearchResponseProcessor.swift */,
+				CCE374B61FA5763C00A3A9AB /* SendMessageResponseProcessor.swift */,
+				CCE374B71FA5763C00A3A9AB /* SubscribeToFeedResponseProcessor.swift */,
+				CCE374B81FA5763C00A3A9AB /* SuggestedFeedForReplyResponseProcessor.swift */,
+				CCE374B91FA5763C00A3A9AB /* TestServerListResponseProcessor.swift */,
+				CCE374BA1FA5763C00A3A9AB /* UnsubscribeFromFeedResponseProcessor.swift */,
+				CCE374BB1FA5763C00A3A9AB /* UpdateUserResponseProcessor.swift */,
+			);
+			path = ResponseProcessors;
+			sourceTree = "<group>";
+		};
+		CCE374B21FA5763C00A3A9AB /* ResponseSubprocessors */ = {
+			isa = PBXGroup;
+			children = (
+				CCE374B31FA5763C00A3A9AB /* SearchFeedsResponseSubprocessor.swift */,
+				CCE374B41FA5763C00A3A9AB /* SearchWhispersResponseSubprocessor.swift */,
+			);
+			path = ResponseSubprocessors;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CCE374261FA571FA00A3A9AB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCE375321FA5763D00A3A9AB /* QuiteGoodNetworking.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CCE374281FA571FA00A3A9AB /* QuiteGoodNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCE3743D1FA571FA00A3A9AB /* Build configuration list for PBXNativeTarget "QuiteGoodNetworking" */;
+			buildPhases = (
+				566107A2D6A9C3D3664F85C9 /* [CP] Check Pods Manifest.lock */,
+				CCE374241FA571FA00A3A9AB /* Sources */,
+				CCE374251FA571FA00A3A9AB /* Frameworks */,
+				CCE374261FA571FA00A3A9AB /* Headers */,
+				CCE374271FA571FA00A3A9AB /* Resources */,
+				3993E96CFE9BBD3E69134294 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuiteGoodNetworking;
+			productName = QuiteGoodNetworking;
+			productReference = CCE374291FA571FA00A3A9AB /* QuiteGoodNetworking.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CCE374311FA571FA00A3A9AB /* QuiteGoodNetworkingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCE374401FA571FA00A3A9AB /* Build configuration list for PBXNativeTarget "QuiteGoodNetworkingTests" */;
+			buildPhases = (
+				1EFC19AED71AA9EBB4851744 /* [CP] Check Pods Manifest.lock */,
+				CCE3742E1FA571FA00A3A9AB /* Sources */,
+				CCE3742F1FA571FA00A3A9AB /* Frameworks */,
+				CCE374301FA571FA00A3A9AB /* Resources */,
+				719EF8DECE879DE42DFD3956 /* [CP] Embed Pods Frameworks */,
+				2E4FD147CEAD678AE6B007E1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCE374351FA571FA00A3A9AB /* PBXTargetDependency */,
+			);
+			name = QuiteGoodNetworkingTests;
+			productName = QuiteGoodNetworkingTests;
+			productReference = CCE374321FA571FA00A3A9AB /* QuiteGoodNetworkingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CCE374201FA571FA00A3A9AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Nicholas Locking";
+				TargetAttributes = {
+					CCE374281FA571FA00A3A9AB = {
+						CreatedOnToolsVersion = 9.0.1;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+					};
+					CCE374311FA571FA00A3A9AB = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CCE374231FA571FA00A3A9AB /* Build configuration list for PBXProject "QuiteGoodNetworking" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CCE3741F1FA571FA00A3A9AB;
+			productRefGroup = CCE3742A1FA571FA00A3A9AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CCE374281FA571FA00A3A9AB /* QuiteGoodNetworking */,
+				CCE374311FA571FA00A3A9AB /* QuiteGoodNetworkingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CCE374271FA571FA00A3A9AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCE375311FA5763D00A3A9AB /* Readme.MD in Resources */,
+				CCE374C81FA5763D00A3A9AB /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCE374301FA571FA00A3A9AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1EFC19AED71AA9EBB4851744 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuiteGoodNetworking-QuiteGoodNetworkingTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E4FD147CEAD678AE6B007E1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuiteGoodNetworking-QuiteGoodNetworkingTests/Pods-QuiteGoodNetworking-QuiteGoodNetworkingTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3993E96CFE9BBD3E69134294 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuiteGoodNetworking/Pods-QuiteGoodNetworking-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		566107A2D6A9C3D3664F85C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuiteGoodNetworking-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		719EF8DECE879DE42DFD3956 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-QuiteGoodNetworking-QuiteGoodNetworkingTests/Pods-QuiteGoodNetworking-QuiteGoodNetworkingTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Swifter/Swifter.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swifter.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuiteGoodNetworking-QuiteGoodNetworkingTests/Pods-QuiteGoodNetworking-QuiteGoodNetworkingTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CCE374241FA571FA00A3A9AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCE375331FA5763D00A3A9AB /* ResponseResultStatusNotificationObserver.swift in Sources */,
+				CCE374C71FA5763D00A3A9AB /* ConcurrentOperation.swift in Sources */,
+				CCE374C41FA5763D00A3A9AB /* HTTPStatusCode.swift in Sources */,
+				CCE374C11FA5763D00A3A9AB /* NetworkParameter.swift in Sources */,
+				CCE374C31FA5763D00A3A9AB /* ResponseProcessor.swift in Sources */,
+				CCE374CA1FA5763D00A3A9AB /* Authenticator.swift in Sources */,
+				CCE374C21FA5763D00A3A9AB /* NetworkParameterDictionary.swift in Sources */,
+				CCE374C91FA5763D00A3A9AB /* HTTPRequest.swift in Sources */,
+				CCE374C51FA5763D00A3A9AB /* HTTPStatusRange.swift in Sources */,
+				CCE374C61FA5763D00A3A9AB /* Networking.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCE3742E1FA571FA00A3A9AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCE374381FA571FA00A3A9AB /* QuiteGoodNetworkingTests.swift in Sources */,
+				CCE375351FA5766A00A3A9AB /* QuiteGoodNetworking_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CCE374351FA571FA00A3A9AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCE374281FA571FA00A3A9AB /* QuiteGoodNetworking */;
+			targetProxy = CCE374341FA571FA00A3A9AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CCE3743B1FA571FA00A3A9AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CCE3743C1FA571FA00A3A9AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CCE3743E1FA571FA00A3A9AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41181C25E971D82144A1AE75 /* Pods-QuiteGoodNetworking.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 227W4JK5VH;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = QuiteGoodNetworking/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ancotaasd.QuiteGoodNetworking;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CCE3743F1FA571FA00A3A9AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E874EBEC157139CBF138DBA0 /* Pods-QuiteGoodNetworking.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 227W4JK5VH;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = QuiteGoodNetworking/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ancotaasd.QuiteGoodNetworking;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CCE374411FA571FA00A3A9AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D3554D4337D82AB6658865F /* Pods-QuiteGoodNetworking-QuiteGoodNetworkingTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 227W4JK5VH;
+				INFOPLIST_FILE = QuiteGoodNetworkingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ancotaasd.QuiteGoodNetworkingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CCE374421FA571FA00A3A9AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 079E0EAA107ABB991436235D /* Pods-QuiteGoodNetworking-QuiteGoodNetworkingTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 227W4JK5VH;
+				INFOPLIST_FILE = QuiteGoodNetworkingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ancotaasd.QuiteGoodNetworkingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CCE374231FA571FA00A3A9AB /* Build configuration list for PBXProject "QuiteGoodNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCE3743B1FA571FA00A3A9AB /* Debug */,
+				CCE3743C1FA571FA00A3A9AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCE3743D1FA571FA00A3A9AB /* Build configuration list for PBXNativeTarget "QuiteGoodNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCE3743E1FA571FA00A3A9AB /* Debug */,
+				CCE3743F1FA571FA00A3A9AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCE374401FA571FA00A3A9AB /* Build configuration list for PBXNativeTarget "QuiteGoodNetworkingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCE374411FA571FA00A3A9AB /* Debug */,
+				CCE374421FA571FA00A3A9AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CCE374201FA571FA00A3A9AB /* Project object */;
+}

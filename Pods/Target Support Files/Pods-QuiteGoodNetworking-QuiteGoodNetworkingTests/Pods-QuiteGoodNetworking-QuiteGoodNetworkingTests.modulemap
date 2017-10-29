@@ -1,0 +1,6 @@
+framework module Pods_QuiteGoodNetworking_QuiteGoodNetworkingTests {
+  umbrella header "Pods-QuiteGoodNetworking-QuiteGoodNetworkingTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
