@@ -3,29 +3,35 @@ import SwiftyJSON
 import Alamofire
 
 /*
-Abstract base class to deal with processing responses from endpoints.
+Processes responses from HTTP requests. Can be overridden to add behaviours.
 */
 open class ResponseProcessor: Operation {
 
     public var httpRequest: HTTPRequest?
+    public var alamofireDataResponse: DataResponse<Data>?
+
+    // Closures that will fire on success/failure/done. 'done' is always called,
+    // regardless of success or failure. This is so you can, for example, remove
+    // your spinner HUD on completion, regardless of whether the request succeeded.
+    open var success: RequestCompletionClosure?
+    open var failure: RequestCompletionClosure?
+    open var completion: RequestCompletionClosure?
+    
+    // Notifications that can be observed to detect/log success/failure of endpoints.
+    static let httpRequestSuccessNotificationName = NSNotification.Name(rawValue: "httpRequestSuccessNotification")
+    static let httpRequestFailureNotificationName = NSNotification.Name(rawValue: "httpRequestFailureNotification")
+    static let httpRequestKey = "request"
 
     //httpStatusCode = response.response?.statusCode
 //    var responseStatusCode: Int?
 //    var responseData: Data?
 //    var responseHeaders: NetworkParameterDictionary?
-    
-    var completion:((_ HTTPRequest: HTTPRequest) -> Void)?
 
-    required override public init() {
-        super.init()
-    }
-    
     open func process() {
         // Stub method, override
     }
     
-    /// Don't override this unless you really have to; work should be done in `process()`
-    override open func main() {
+    override fileprivate func main() {
 
         guard Thread.current.isMainThread == false else {
             fatalError("Response processing should not be done on the main thread.")
@@ -41,7 +47,21 @@ open class ResponseProcessor: Operation {
 
         process()
         
-        completion?(httpRequest)
+        switch response.result {
+            
+        case .success:
+            
+            success?(httpRequest, response)
+            NotificationCenter.default.post(name: HTTPRequest.httpRequestSuccessNotificationName, object: nil, userInfo: [HTTPRequest.httpRequestKey: self])
+            
+        case .failure:
+            
+            failure?(httpRequest, response)
+            NotificationCenter.default.post(name: HTTPRequest.httpRequestFailureNotificationName, object: nil, userInfo: [HTTPRequest.httpRequestKey: self])
+            
+        }
+
+        completion?(httpRequest, response)
         
     }
     
