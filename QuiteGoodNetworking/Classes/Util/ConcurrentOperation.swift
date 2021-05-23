@@ -24,7 +24,7 @@ open class ConcurrentOperation : Operation {
             return _executing
         }
         set {
-            if (_executing != newValue) {
+            if _executing != newValue {
                 self.willChangeValue(forKey: "isExecuting")
                 _executing = newValue
                 self.didChangeValue(forKey: "isExecuting")
@@ -32,13 +32,13 @@ open class ConcurrentOperation : Operation {
         }
     }
     
-    fileprivate var _finished: Bool = false;
+    fileprivate var _finished: Bool = false
     override open var isFinished: Bool {
         get {
             return _finished
         }
         set {
-            if (_finished != newValue) {
+            if _finished != newValue {
                 self.willChangeValue(forKey: "isFinished")
                 _finished = newValue
                 self.didChangeValue(forKey: "isFinished")
@@ -57,9 +57,18 @@ open class ConcurrentOperation : Operation {
 
     }
     
+    /***
+     Cancels the operation. It is assumed when an operation is cancelled, the caller is indicating
+     that any return state, completion, or further processing is to be discarded.
+    */
+    override open func cancel() {
+        super.cancel()
+        completeOperation()
+    }
+    
     override open func start() {
         
-        if (isCancelled) {
+        if isCancelled {
             isFinished = true
             return
         }
@@ -70,13 +79,12 @@ open class ConcurrentOperation : Operation {
         
     }
     
-    @available(*, deprecated: 1.0, message: "ConcurrentOperation never calls completionBlock, even though it is a property of NSOperation") override open var completionBlock: (() -> Void)? {
-        set {
-            assert(newValue == nil, "We won't ever use this handler")
-        }
-        get {
-            return nil
-        }
+  @available(swift, deprecated: 1.0, message: "ConcurrentOperation never calls completionBlock, even though it is a property of NSOperation") override open var completionBlock: (() -> Void)? {
+    set {
+      assert(newValue == nil, "We won't ever use this handler")
     }
+    get {
+      return nil
+    }
+  }
 }
-
