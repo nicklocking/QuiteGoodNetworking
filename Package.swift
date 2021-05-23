@@ -20,5 +20,6 @@ let package = Package(
                             from: "5.2.2")],
     targets: [.target(name: "QuiteGoodNetworking",
                       dependencies: ["Alamofire"],
-                      path: "QuiteGoodNetworking/Classes")]
+                      path: "QuiteGoodNetworking/Classes",
+                      publicHeadersPath: "QuiteGoodNetworking")]
 )
