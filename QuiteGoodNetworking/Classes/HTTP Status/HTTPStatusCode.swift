@@ -1,3 +1,4 @@
+import Foundation
 
 /*
  Enumeration of all possible HTTP status response codes.
@@ -8,7 +9,7 @@
 enum HTTPStatusCode: Int {
     
     // Informational
-    case continueStatusCode = 100 // 'continue' is a reserved word in Swift.
+    case `continue` = 100 // 'continue' is a reserved word in Swift.
     case switchingProtocols = 101
     case processing = 102
     
@@ -54,7 +55,7 @@ enum HTTPStatusCode: Int {
     case unsupportedMediaType = 415
     case rangeNotSatisfiable = 416
     case expectationFailed = 417
-    case imATeapot = 418
+    case imATeapot = 418 // Idiots
     case misdirectedRequest = 421
     case unprocessableEntity = 422
     case locked = 423
@@ -83,18 +84,18 @@ enum HTTPStatusCode: Int {
 /*
  Equality comparison overrides to check if given Ints compare to status codes.
  */
-func ==(left: Int?, right: HTTPStatusCode) -> Bool {
+func == (left: Int?, right: HTTPStatusCode) -> Bool {
     return right.rawValue == left
 }
 
-func ==(left: HTTPStatusCode, right: Int?) -> Bool {
+func == (left: HTTPStatusCode, right: Int?) -> Bool {
     return right == left
 }
 
-func !=(left: Int?, right: HTTPStatusCode) -> Bool {
+func != (left: Int?, right: HTTPStatusCode) -> Bool {
     return !(left == right)
 }
 
-func !=(left: HTTPStatusCode, right: Int?) -> Bool {
+func != (left: HTTPStatusCode, right: Int?) -> Bool {
     return right != left
 }

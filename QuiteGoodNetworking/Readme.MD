@@ -12,6 +12,7 @@ I've also built many networking layers at quite a large scale (millions of MAU),
     * NetworkingManager class expands to thousands of lines, becomes unmanageable.
     * Networking is done on the main thread, crippling performance.
     * Networking is done on background threads, but JSON encoding is done on the main thread, crippling performance.
+    * Networking is done on background threads, JSON encoding is done on background threads, but JSON response decoding and database writes are done on the main thread, crippling performance.
     * HTTP requests are in a queue, but JSON decoding is so slow that big responses cripple the HTTP request queue, crippling networking performance - your request to refresh the screen you're on can't complete because the request that's doing a big chunk of JSON processing and writing to disk in the background is choking the queue.
     * Authentication is an afterthought and barely works, in addition to not defining behaviours very well - if one request needs re-authentication, are the others paused while this happens? Do the authentication tokens get refreshed on the requests that are in the queue?
 
@@ -48,7 +49,7 @@ Here's a complete example, including an app delegate.
         
             let googleHTTPRequest = GoogleHTTPRequest()
             
-            googleHTTPRequest.completion = {(request in)
+            googleHTTPRequest.completion = { (request in)
                 print("Request complete!")
             }
 
