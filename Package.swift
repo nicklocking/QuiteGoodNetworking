@@ -20,5 +20,6 @@ let package = Package(
     targets: [.target(name: "QuiteGoodNetworking",
                       dependencies: ["Alamofire"],
                       path: "QuiteGoodNetworking/Classes",
-                      publicHeadersPath: "QuiteGoodNetworking")]
+                      publicHeadersPath: "QuiteGoodNetworking")],
+    swiftLanguageVersions: [.v5]
 )
